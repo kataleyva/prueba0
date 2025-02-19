@@ -1,19 +1,13 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   https://r-pkgs.org
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
-
-sumar <- function(a, b) {
-  print(a+b)
+#' Celsius conversion
+#'
+#' Convert degrees Celsius temperatures to degrees Fahrenheit
+#' @param C_temp The temperature in degrees Celsius
+#' @return The temperature in degrees Fahrenheit
+#' @examples 
+#' temp1 <- C_to_F(22);
+#' temp2 <- C_to_F( c(-2, 12, 23) );
+#' @export
+C_to_F <- function(C_temp){
+    F_temp <- (C_temp * 9/5) + 32;
+    return(F_temp);
 }
-
